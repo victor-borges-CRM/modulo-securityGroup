@@ -3,7 +3,7 @@ data "aws_vpc" "vpc_padrao" {
 }
 
 resource "aws_security_group" "teste_SG" {
-  name        = "Teste_INF_561"
+  name        = var.nome_security_group
   description = "Grupo de seguranca para Teste_INF_561"
   vpc_id      = data.aws_vpc.vpc_padrao.id
 
@@ -25,6 +25,6 @@ resource "aws_security_group" "teste_SG" {
 
 
   tags = {
-    Name = "Teste_INF_561"
+    Name = var.nome_security_group
   }
 }
