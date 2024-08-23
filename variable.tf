@@ -1,6 +1,6 @@
 variable "vpc_id" {
   type        = string
-  default     = "vpc-99580efd"
+  default     = "vpc-0708bc60b0f86d2d7"
   description = "ID da VPC padrão da CRMBonus"
 }
 
